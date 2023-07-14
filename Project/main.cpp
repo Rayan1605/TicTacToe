@@ -132,7 +132,7 @@ bool FindWinner(bool Player1,char Name[100]) { // This is the function that will
             return true;
         }
     }
-    return false;
+    return false; //if the check failed to find any winner then it return false
 
 
 }
@@ -140,7 +140,7 @@ bool FindWinner(bool Player1,char Name[100]) { // This is the function that will
 void GetUserInput() {
     printf("Enter a number between 1 and 9: \n");
     int input;
-    scanf("%d", &input);
+    scanf("%d", &input); //Getting the user input
 
     if (input > 9 || input < 1) {
         printf("Invalid input, please try again\n");
