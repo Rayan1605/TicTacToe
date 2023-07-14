@@ -11,6 +11,7 @@ int main() {
     DrawBoard(); //Calling the function to draw the board
     //This will be called after each go
 
+
 }
 
 void DrawBoard() {
