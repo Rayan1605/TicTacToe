@@ -41,6 +41,7 @@ int main() {
         i++;
     }
     printf("Game Over\n");
+    printf("The result was a draw\n");
     printf("Thanks for playing %s\n", FirstPerson);
 
 }
