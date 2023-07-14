@@ -28,12 +28,12 @@ void DrawBoard() {
     printf("  \n");
 */
     printf("Welcome to Tic Tac Toe!\n");
+    printf("You will be X and the computer will be O.\n");
     printf("  %c    | %c  | %c\n ", myNumbers[0], myNumbers[1], myNumbers[2]);
     printf(" ----|---|----\n");
     printf("  %c    | %c  | %c\n", myNumbers[3], myNumbers[4], myNumbers[5]);
     printf("  ----|---|----\n");
     printf("  %c    |  %c | %c\n", myNumbers[6], myNumbers[7], myNumbers[8]);
-    printf("You will be X and the computer will be O.\n");
 
 }
 
