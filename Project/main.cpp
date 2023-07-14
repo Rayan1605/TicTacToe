@@ -24,7 +24,6 @@ char myNumbers[9] = {};
 int main() {
     char FirstPerson[100];  // Assuming a maximum length of 100 characters
     printf("Enter your name: ");
-    bool isWinner;
     scanf("%s", FirstPerson);//Getting the person name
     DrawBoard(); //Calling the function to draw the board
     //This will be called after each go
