@@ -24,8 +24,6 @@ void DrawBoard(char i,int marker) {
         printf("---|---|---\n");
         printf("   |   | \n");
         printf("You will be X and the computer will be O.\n");
-        return;
-
 
 }
 
