@@ -14,7 +14,7 @@ int main() {
     char SecondMarker = 'O';
     DrawBoard(GameStart, FirstMarker,0);
     GameStart = true;
-    printf("%c",myNumbers[2]);
+    printf("%c now again I should see something",myNumbers[2]);
 
 }
 
