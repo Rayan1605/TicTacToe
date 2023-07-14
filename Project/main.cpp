@@ -2,7 +2,7 @@
 
 void DrawBoard();
 
-void DrawBoard(bool b, char i);
+void DrawBoard(bool b, char i, int marker);
 
 int main() {
     char FirstPerson[100];  // Assuming a maximum length of 100 characters
@@ -12,12 +12,12 @@ int main() {
     scanf("%s", FirstPerson);
     char FirstMarker = 'X';
     char SecondMarker = 'O';
-    DrawBoard(GameStart, FirstMarker);
+    DrawBoard(GameStart, FirstMarker,0);
     GameStart = true;
 
 }
 
-void DrawBoard(bool b, char i) {
+void DrawBoard(bool b, char i,int marker) {
     if (!b) {
           printf("Welcome to Tic Tac Toe!\n");
         printf("   |   | \n");
@@ -28,6 +28,6 @@ void DrawBoard(bool b, char i) {
         printf("You will be X and the computer will be O.\n");
         return;
     }
-
-
+    printf("check")
 }
+
