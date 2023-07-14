@@ -21,17 +21,6 @@ char myNumbers[9] = {}; //This is the array that will hold the position
 
 
 
-//A way to get the players to take turns.-done
-//
-//A 3x3 grid in which to store the turns/character of the two players. -> done
-//
-//A way of displaying the grid. -> dome
-//
-//Some way of specifying where to place the mark on the grid and checking to see if it’s a valid go. ->done
-//
-//Use a random function to generate the computers location. ->done
-//
-//A method of finding out if one of the players has won.-Done
 
 int main() {
     char FirstPerson[100];  // Assuming a maximum length of 100 characters
