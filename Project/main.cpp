@@ -9,8 +9,6 @@ int main() {
    char Computer[10] = "Computer";
     printf("Enter your name: ");
     scanf("%s", FirstPerson);
-    char FirstMarker = 'X';
-    char SecondMarker = 'O';
     DrawBoard();
 
 }
