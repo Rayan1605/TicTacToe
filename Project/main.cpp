@@ -40,6 +40,8 @@ int main() {
 
         i++;
     }
+    printf("Game Over\n");
+    printf("Thanks for playing %s\n", FirstPerson);
 
 }
 
