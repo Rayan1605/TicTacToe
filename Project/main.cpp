@@ -2,7 +2,9 @@
 
 void DrawBoard();
 
-void GetInput();
+void GetInputForComputer();
+
+void GetUserInput();
 
 char myNumbers[9] = {};
 
@@ -16,13 +18,12 @@ int main() {
     bool player1 = true;
     int direction;
     while(i < 9){
-        if (player1 == true){
-            printf("Player. Please enter a number: 1-9 ");
-            scanf("%d", &direction);
+        if (player1){
+          GetUserInput();
             player1 = false;
         }
         else{
-         GetInput();
+            GetInputForComputer();
             player1 = true;
         }
 
@@ -32,7 +33,12 @@ int main() {
 
 }
 
-void GetInput() {
+void GetUserInput() {
+
+}
+
+void GetInputForComputer() {
+
 
 }
 
