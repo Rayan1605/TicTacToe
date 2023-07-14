@@ -96,7 +96,8 @@ bool FindWinner(bool Player1,char Name[100]) { // This is the function that will
             return true;
         }
     }
-    else {
+    else { //so if it not the player turn then it must be the computer turn
+        //so we are doing the same
         if (myNumbers[0] == 'O' && myNumbers[1] == 'O' && myNumbers[2] == 'O') {
             printf("Game Over\n");
             printf("Congratulations Player “COMPUTER”, YOU ARE THE WINNER! ");
