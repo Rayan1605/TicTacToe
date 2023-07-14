@@ -8,7 +8,10 @@ void GetUserInput();
 
 bool FindWinner(bool Player1, char Name[100]);
 
-char myNumbers[9] = {};
+char myNumbers[9] = {}; //This is the array that will hold the numbers
+
+
+
 //A way to get the players to take turns.-done
 //
 //A 3x3 grid in which to store the turns/character of the two players. -> done
@@ -19,7 +22,7 @@ char myNumbers[9] = {};
 //
 //Use a random function to generate the computers location. ->done
 //
-//A method of finding out if one of the players has won.
+//A method of finding out if one of the players has won.-Done
 
 int main() {
     char FirstPerson[100];  // Assuming a maximum length of 100 characters
