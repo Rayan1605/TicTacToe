@@ -181,6 +181,11 @@ void GetInputForComputer() {
 
 void DrawBoard() {
 //This will be called after each go
+// it will draw the board with the updated array
+//So everytime we update the array we call this method
+//and c will look in the gloval variable that already updated and draw the board
+// since we first creaated the array with everything null , it won't just leave
+// a blank space where %c is
     printf("Welcome to Tic Tac Toe!\n");
     printf("You will be X and the computer will be O.\n");
     printf("  %c    | %c  | %c\n ", myNumbers[0], myNumbers[1], myNumbers[2]);
