@@ -2,7 +2,22 @@
 
 void DrawBoard();
 
+void GetInputForComputer();
+
+void GetUserInput();
+
 char myNumbers[9] = {};
+//A way to get the players to take turns.
+//
+//A 3x3 grid in which to store the turns/character of the two players. -> done
+//
+//A way of displaying the grid. -> dome
+//
+//Some way of specifying where to place the mark on the grid and checking to see if it’s a valid go. ->done
+//
+//Use a random function to generate the computers location. ->done
+//
+//A method of finding out if one of the players has won.
 
 int main() {
     char FirstPerson[100];  // Assuming a maximum length of 100 characters
@@ -12,21 +27,52 @@ int main() {
     //This will be called after each go
     int i = 0;
     bool player1 = true;
-    int direction;
     while(i < 9){
-        if (player1 == true){
-            printf("Player. Please enter a number: 1-9 ");
-            scanf("%d", &direction);
+        if (player1){
+          GetUserInput();
             player1 = false;
         }
         else{
-            printf("Computer, please enter a number: ");
-            scanf("%s", myNumbers);
+            GetInputForComputer();
             player1 = true;
         }
 
 
         i++;
+    }
+
+}
+
+void GetUserInput() {
+    printf("Enter a number between 1 and 9: \n");
+    int input;
+    scanf("%d", &input);
+
+    if (input > 9 || input < 1) {
+        printf("Invalid input, please try again\n");
+        GetUserInput();
+    }
+    else if (myNumbers[input - 1] == 'X' || myNumbers[input - 1] == 'O') {
+        printf("Invalid input, please try again\n");
+        printf("Please check the board and enter a spot that empty \n");
+        GetUserInput();
+    }
+    else {
+        myNumbers[input - 1] = 'X';
+        DrawBoard();
+    }
+
+}
+
+void GetInputForComputer() {
+    srand(time(NULL));
+   int ran =  (rand() % (9 - 1 + 1)) + 1;// random number between 1 and 9
+    if (myNumbers[ran - 1] == 'X' || myNumbers[ran - 1] == 'O') {
+        GetInputForComputer();
+    }
+    else {
+        myNumbers[ran - 1] = 'O';
+        DrawBoard();
     }
 
 }
