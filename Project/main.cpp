@@ -6,7 +6,7 @@ void GetInputForComputer();
 
 void GetUserInput();
 
-bool FindWinner(bool Player1);
+bool FindWinner(bool Player1, char Name[20]);
 
 char myNumbers[9] = {};
 //A way to get the players to take turns.-done
@@ -40,7 +40,7 @@ int main() {
         }
 
 
-        FindWinner(player1);
+        FindWinner(player1, FirstPerson);
         i++;
     }
     printf("Game Over\n");
@@ -49,7 +49,7 @@ int main() {
 
 }
 
-bool FindWinner(bool Player1,char[] Name) {
+bool FindWinner(bool Player1,char Name[100]) {
     //This will be called after each go
     if (Player1) {
         if (myNumbers[0] == 'X' && myNumbers[1] == 'X' && myNumbers[2] == 'X') {
