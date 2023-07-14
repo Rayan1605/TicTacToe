@@ -103,19 +103,19 @@ bool FindWinner(bool Player1,char Name[100]) {
             return true;
         } else if (myNumbers[1] == 'O' && myNumbers[4] == 'O' && myNumbers[7] == 'O') {
             printf("Game Over\n");
-            printf("The winner is the Computer\n");
+            printf("Congratulations Player “COMPUTER”, YOU ARE THE WINNER! ");
             return true;
         } else if (myNumbers[2] == 'O' && myNumbers[5] == 'O' && myNumbers[8] == 'O') {
             printf("Game Over\n");
-            printf("The winner is the Computer\n");
+            printf("Congratulations Player “COMPUTER”, YOU ARE THE WINNER! ");
             return true;
         } else if (myNumbers[0] == 'O' && myNumbers[4] == 'O' && myNumbers[8] == 'O') {
             printf("Game Over\n");
-            printf("The winner is the Computer\n");
+            printf("Congratulations Player “COMPUTER”, YOU ARE THE WINNER! ");
             return true;
         } else if (myNumbers[2] == 'O' && myNumbers[4] == 'O' && myNumbers[6] == 'O') {
             printf("Game Over\n");
-            printf("The winner is the Computer\n");
+            printf("Congratulations Player “COMPUTER”, YOU ARE THE WINNER! ");
             return true;
         }
     }
