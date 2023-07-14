@@ -4,6 +4,7 @@ void DrawBoard();
 
 void DrawBoard(char i, int marker);
 char myNumbers[9] = {};
+
 int main() {
     char FirstPerson[100];  // Assuming a maximum length of 100 characters
    char Computer[10] = "Computer";
