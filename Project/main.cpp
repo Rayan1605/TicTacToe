@@ -2,6 +2,8 @@
 
 void DrawBoard();
 
+void GetInput();
+
 char myNumbers[9] = {};
 
 int main() {
@@ -20,14 +22,17 @@ int main() {
             player1 = false;
         }
         else{
-            printf("Computer, please enter a number: ");
-            scanf("%s", myNumbers);
+         GetInput();
             player1 = true;
         }
 
 
         i++;
     }
+
+}
+
+void GetInput() {
 
 }
 
