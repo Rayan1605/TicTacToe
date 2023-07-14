@@ -2,7 +2,6 @@
 
 void DrawBoard();
 
-void DrawBoard();
 char myNumbers[9] = {};
 
 int main() {
