@@ -40,7 +40,7 @@ int main() {
         }
 
 
-        FindWinner(player1, FirstPerson);
+        if (FindWinner(player1, FirstPerson))return 0;
         i++;
     }
     printf("Game Over\n");
