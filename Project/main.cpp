@@ -40,6 +40,14 @@ void GetUserInput() {
         printf("Invalid input, please try again\n");
         GetUserInput();
     }
+    else if (myNumbers[input - 1] == 'X' || myNumbers[input - 1] == 'O') {
+        printf("Invalid input, please try again\n");
+        GetUserInput();
+    }
+    else {
+        myNumbers[input - 1] = 'X';
+        DrawBoard();
+    }
 
 }
 
