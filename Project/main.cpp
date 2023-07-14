@@ -16,7 +16,6 @@ int main() {
     //This will be called after each go
     int i = 0;
     bool player1 = true;
-    int direction;
     while(i < 9){
         if (player1){
           GetUserInput();
