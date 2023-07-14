@@ -6,7 +6,6 @@ char myNumbers[9] = {};
 
 int main() {
     char FirstPerson[100];  // Assuming a maximum length of 100 characters
-   char Computer[10] = "Computer";
     printf("Enter your name: ");
     scanf("%s", FirstPerson);
     DrawBoard();
