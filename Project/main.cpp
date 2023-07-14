@@ -29,29 +29,32 @@ int main() {
     DrawBoard(); //Calling the function to draw the board
     //This will be called after each go
     int i = 0;
-    bool player1 = true;
-    while(i < 9){
-        if (player1){
+    bool player1 = true;//So the player will go first and when this is set to false
+    //That mean it the computer turn so we are using this to know who turn it is
+    while(i < 9){ // This will loop 9 times because we have 9 boxes once it goes through all of them
+        //then we can assume that it a draw
+        if (player1){ // is if player1 is true then get the user input
           GetUserInput();
             player1 = false;
         }
         else{
-            GetInputForComputer();
+            GetInputForComputer(); //and if not then it must be the computer turn
             player1 = true;
         }
 
 
-        if (FindWinner(player1, FirstPerson))return 0;
+        if (FindWinner(player1, FirstPerson))return 0; //if their is a winner then end the game
         i++;
     }
-    printf("Game Over\n");
+    printf("Game Over\n");//if it goes through then print this
     printf("The result was a draw\n");
     printf("Thanks for playing %s\n", FirstPerson);
 
 }
 
-bool FindWinner(bool Player1,char Name[100]) {
-    //This will be called after each go
+bool FindWinner(bool Player1,char Name[100]) { // This is the function that will check if their is a winner
+    // and it will take the player1 and the name of the person
+    //The
     if (Player1) {
         if (myNumbers[0] == 'X' && myNumbers[1] == 'X' && myNumbers[2] == 'X') {
             printf("Game Over\n");
