@@ -2,7 +2,7 @@
 
 void DrawBoard();
 
-void DrawBoard(char i, int marker);
+void DrawBoard();
 char myNumbers[9] = {};
 
 int main() {
@@ -12,11 +12,11 @@ int main() {
     scanf("%s", FirstPerson);
     char FirstMarker = 'X';
     char SecondMarker = 'O';
-    DrawBoard(FirstMarker,0);
+    DrawBoard();
 
 }
 
-void DrawBoard(char i,int marker) {
+void DrawBoard() {
 
           printf("Welcome to Tic Tac Toe!\n");
         printf("   |   | \n");
