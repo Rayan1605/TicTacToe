@@ -18,13 +18,13 @@ int main() {
 
 void DrawBoard() {
 
-          printf("Welcome to Tic Tac Toe!\n");
-        printf("   |   | \n");
-        printf("---|---|---\n");
-        printf("   |   | \n");
-        printf("---|---|---\n");
-        printf("   |   | \n");
-        printf("You will be X and the computer will be O.\n");
+    printf("Welcome to Tic Tac Toe!\n");
+    printf("   |   | \n");
+    printf("---|---|---\n");
+    printf("   |   | \n");
+    printf("---|---|---\n");
+    printf("   |   | \n");
+    printf("You will be X and the computer will be O.\n");
 
 }
 
