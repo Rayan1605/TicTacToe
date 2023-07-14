@@ -11,8 +11,19 @@ int main() {
     DrawBoard(); //Calling the function to draw the board
     //This will be called after each go
     int i = 0;
+    bool player1 = true;
+    int direction;
     while(i < 9){
-
+        if (player1 == true){
+            printf("Player. Please enter a number: 1-9 ");
+            scanf("%s", direction);
+            player1 = false;
+        }
+        else{
+            printf("Computer, please enter a number: ");
+            scanf("%s", myNumbers);
+            player1 = true;
+        }
 
 
         i++;
