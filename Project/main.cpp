@@ -50,12 +50,12 @@ int main() {
 
 }
 
-bool FindWinner(bool Player1) {
+bool FindWinner(bool Player1,char[] Name) {
     //This will be called after each go
     if (Player1) {
         if (myNumbers[0] == 'X' && myNumbers[1] == 'X' && myNumbers[2] == 'X') {
             printf("Game Over\n");
-            printf("The winner is X\n");
+            printf("The winner is \n");
             return true;
         } else if (myNumbers[3] == 'X' && myNumbers[4] == 'X' && myNumbers[5] == 'X') {
             printf("Game Over\n");
@@ -92,31 +92,31 @@ bool FindWinner(bool Player1) {
 
         } else if (myNumbers[3] == 'O' && myNumbers[4] == 'O' && myNumbers[5] == 'O') {
             printf("Game Over\n");
-            printf("The winner is O\n");
+            printf("The winner is the Computer\n");
             return true;
         } else if (myNumbers[6] == 'O' && myNumbers[7] == 'O' && myNumbers[8] == 'O') {
             printf("Game Over\n");
-            printf("The winner is O\n");
+            printf("The winner is the Computer\n");
             exit(0);
         } else if (myNumbers[0] == 'O' && myNumbers[3] == 'O' && myNumbers[6] == 'O') {
             printf("Game Over\n");
-            printf("The winner is O\n");
+            printf("The winner is the Computer\n");
             return true;
         } else if (myNumbers[1] == 'O' && myNumbers[4] == 'O' && myNumbers[7] == 'O') {
             printf("Game Over\n");
-            printf("The winner is O\n");
+            printf("The winner is the Computer\n");
             return true;
         } else if (myNumbers[2] == 'O' && myNumbers[5] == 'O' && myNumbers[8] == 'O') {
             printf("Game Over\n");
-            printf("The winner is O\n");
+            printf("The winner is the Computer\n");
             return true;
         } else if (myNumbers[0] == 'O' && myNumbers[4] == 'O' && myNumbers[8] == 'O') {
             printf("Game Over\n");
-            printf("The winner is O\n");
+            printf("The winner is the Computer\n");
             return true;
         } else if (myNumbers[2] == 'O' && myNumbers[4] == 'O' && myNumbers[6] == 'O') {
             printf("Game Over\n");
-            printf("The winner is O\n");
+            printf("The winner is the Computer\n");
             return true;
         }
     }
