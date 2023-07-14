@@ -16,7 +16,7 @@ int main() {
     while(i < 9){
         if (player1 == true){
             printf("Player. Please enter a number: 1-9 ");
-            scanf("%s", direction);
+            scanf("%d", &direction);
             player1 = false;
         }
         else{
