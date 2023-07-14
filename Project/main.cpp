@@ -6,7 +6,7 @@ void GetInputForComputer();
 
 void GetUserInput();
 
-bool FindWinner(bool Player1, char Name[20]);
+bool FindWinner(bool Player1, char Name[100]);
 
 char myNumbers[9] = {};
 //A way to get the players to take turns.-done
