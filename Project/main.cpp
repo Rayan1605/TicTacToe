@@ -28,6 +28,6 @@ void DrawBoard(bool b, char i,int marker) {
         printf("You will be X and the computer will be O.\n");
         return;
     }
-    printf("check")
+    printf("check");
 }
 
