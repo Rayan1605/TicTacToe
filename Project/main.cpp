@@ -7,7 +7,7 @@ void GetInputForComputer();
 void GetUserInput();
 
 char myNumbers[9] = {};
-//A way to get the players to take turns.
+//A way to get the players to take turns.-done
 //
 //A 3x3 grid in which to store the turns/character of the two players. -> done
 //
