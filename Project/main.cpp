@@ -33,6 +33,13 @@ int main() {
 }
 
 void GetUserInput() {
+    printf("Enter a number between 1 and 9: \n");
+    int input;
+    scanf("%d", &input);
+    if (input > 9 || input < 1) {
+        printf("Invalid input, please try again\n");
+        GetUserInput();
+    }
 
 }
 
