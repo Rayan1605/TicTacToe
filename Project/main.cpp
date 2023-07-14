@@ -54,7 +54,7 @@ void GetUserInput() {
 }
 
 void GetInputForComputer() {
-
+    srand(time(NULL));
 
 }
 
