@@ -6,8 +6,13 @@ void GetInputForComputer();
 
 void GetUserInput();
 
-char myNumbers[9] = {};
-//A way to get the players to take turns.
+bool FindWinner(bool Player1, char Name[100]);
+
+char myNumbers[9] = {}; //This is the array that will hold the numbers
+
+
+
+//A way to get the players to take turns.-done
 //
 //A 3x3 grid in which to store the turns/character of the two players. -> done
 //
@@ -17,7 +22,7 @@ char myNumbers[9] = {};
 //
 //Use a random function to generate the computers location. ->done
 //
-//A method of finding out if one of the players has won.
+//A method of finding out if one of the players has won.-Done
 
 int main() {
     char FirstPerson[100];  // Assuming a maximum length of 100 characters
@@ -38,8 +43,89 @@ int main() {
         }
 
 
+        if (FindWinner(player1, FirstPerson))return 0;
         i++;
     }
+    printf("Game Over\n");
+    printf("The result was a draw\n");
+    printf("Thanks for playing %s\n", FirstPerson);
+
+}
+
+bool FindWinner(bool Player1,char Name[100]) {
+    //This will be called after each go
+    if (Player1) {
+        if (myNumbers[0] == 'X' && myNumbers[1] == 'X' && myNumbers[2] == 'X') {
+            printf("Game Over\n");
+            printf("Congratulations Player “%s”, YOU ARE THE WINNER! ",Name);
+            return true;
+        } else if (myNumbers[3] == 'X' && myNumbers[4] == 'X' && myNumbers[5] == 'X') {
+            printf("Game Over\n");
+            printf("Congratulations Player “%s”, YOU ARE THE WINNER! ",Name);
+            return true;
+        } else if (myNumbers[6] == 'X' && myNumbers[7] == 'X' && myNumbers[8] == 'X') {
+            printf("Game Over\n");
+            printf("Congratulations Player “%s”, YOU ARE THE WINNER! ",Name);
+            return true;
+        } else if (myNumbers[0] == 'X' && myNumbers[3] == 'X' && myNumbers[6] == 'X') {
+            printf("Game Over\n");
+            printf("Congratulations Player “%s”, YOU ARE THE WINNER! ",Name);
+            return true;
+        } else if (myNumbers[1] == 'X' && myNumbers[4] == 'X' && myNumbers[7] == 'X') {
+            printf("Game Over\n");
+            printf("Congratulations Player “%s”, YOU ARE THE WINNER! ",Name);
+            return true;
+        } else if (myNumbers[2] == 'X' && myNumbers[5] == 'X' && myNumbers[8] == 'X') {
+            printf("Game Over\n");
+            printf("Congratulations Player “%s”, YOU ARE THE WINNER! ",Name);
+            return true;
+        } else if (myNumbers[0] == 'X' && myNumbers[4] == 'X' && myNumbers[8] == 'X') {
+            printf("Game Over\n");
+            printf("Congratulations Player “%s”, YOU ARE THE WINNER! ",Name);
+            return true;
+        } else if (myNumbers[2] == 'X' && myNumbers[4] == 'X' && myNumbers[6] == 'X') {
+            printf("Game Over\n");
+            printf("Congratulations Player “%s”, YOU ARE THE WINNER! ",Name);
+            return true;
+        }
+    }
+    else {
+        if (myNumbers[0] == 'O' && myNumbers[1] == 'O' && myNumbers[2] == 'O') {
+            printf("Game Over\n");
+            printf("Congratulations Player “COMPUTER”, YOU ARE THE WINNER! ");
+            return true;
+        } else if (myNumbers[3] == 'O' && myNumbers[4] == 'O' && myNumbers[5] == 'O') {
+            printf("Game Over\n");
+            printf("Congratulations Player “COMPUTER”, YOU ARE THE WINNER! ");
+            return true;
+        } else if (myNumbers[6] == 'O' && myNumbers[7] == 'O' && myNumbers[8] == 'O') {
+            printf("Game Over\n");
+            printf("Congratulations Player “COMPUTER”, YOU ARE THE WINNER! ");
+          return true;
+        } else if (myNumbers[0] == 'O' && myNumbers[3] == 'O' && myNumbers[6] == 'O') {
+            printf("Game Over\n");
+            printf("Congratulations Player “COMPUTER”, YOU ARE THE WINNER! ");
+            return true;
+        } else if (myNumbers[1] == 'O' && myNumbers[4] == 'O' && myNumbers[7] == 'O') {
+            printf("Game Over\n");
+            printf("Congratulations Player “COMPUTER”, YOU ARE THE WINNER! ");
+            return true;
+        } else if (myNumbers[2] == 'O' && myNumbers[5] == 'O' && myNumbers[8] == 'O') {
+            printf("Game Over\n");
+            printf("Congratulations Player “COMPUTER”, YOU ARE THE WINNER! ");
+            return true;
+        } else if (myNumbers[0] == 'O' && myNumbers[4] == 'O' && myNumbers[8] == 'O') {
+            printf("Game Over\n");
+            printf("Congratulations Player “COMPUTER”, YOU ARE THE WINNER! ");
+            return true;
+        } else if (myNumbers[2] == 'O' && myNumbers[4] == 'O' && myNumbers[6] == 'O') {
+            printf("Game Over\n");
+            printf("Congratulations Player “COMPUTER”, YOU ARE THE WINNER! ");
+            return true;
+        }
+    }
+    return false;
+
 
 }
 
@@ -63,6 +149,7 @@ void GetUserInput() {
     }
 
 }
+
 
 void GetInputForComputer() {
     srand(time(NULL));
