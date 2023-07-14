@@ -88,7 +88,9 @@ bool FindWinner(bool Player1,char Name[100]) {
     }
     else {
         if (myNumbers[0] == 'O' && myNumbers[1] == 'O' && myNumbers[2] == 'O') {
-
+            printf("Game Over\n");
+            printf("Congratulations Player “COMPUTER”, YOU ARE THE WINNER! ");
+            return true;
         } else if (myNumbers[3] == 'O' && myNumbers[4] == 'O' && myNumbers[5] == 'O') {
             printf("Game Over\n");
             printf("Congratulations Player “COMPUTER”, YOU ARE THE WINNER! ");
