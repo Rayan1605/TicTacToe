@@ -24,6 +24,7 @@ char myNumbers[9] = {};
 int main() {
     char FirstPerson[100];  // Assuming a maximum length of 100 characters
     printf("Enter your name: ");
+    bool isWinner;
     scanf("%s", FirstPerson);//Getting the person name
     DrawBoard(); //Calling the function to draw the board
     //This will be called after each go
@@ -49,86 +50,9 @@ int main() {
 
 }
 
-void FindWinner() {
+bool FindWinner() {
     //This will be called after each go
-    if (myNumbers[0] == 'X' && myNumbers[1] == 'X' && myNumbers[2] == 'X') {
-        printf("Game Over\n");
-        printf("The winner is X\n");
-        exit(0);
-    }
-    else if (myNumbers[3] == 'X' && myNumbers[4] == 'X' && myNumbers[5] == 'X') {
-        printf("Game Over\n");
-        printf("The winner is X\n");
-        exit(0);
-    }
-    else if (myNumbers[6] == 'X' && myNumbers[7] == 'X' && myNumbers[8] == 'X') {
-        printf("Game Over\n");
-        printf("The winner is X\n");
-        exit(0);
-    }
-    else if (myNumbers[0] == 'X' && myNumbers[3] == 'X' && myNumbers[6] == 'X') {
-        printf("Game Over\n");
-        printf("The winner is X\n");
-        exit(0);
-    }
-    else if (myNumbers[1] == 'X' && myNumbers[4] == 'X' && myNumbers[7] == 'X') {
-        printf("Game Over\n");
-        printf("The winner is X\n");
-        exit(0);
-    }
-    else if (myNumbers[2] == 'X' && myNumbers[5] == 'X' && myNumbers[8] == 'X') {
-        printf("Game Over\n");
-        printf("The winner is X\n");
-        exit(0);
-    }
-    else if (myNumbers[0] == 'X' && myNumbers[4] == 'X' && myNumbers[8] == 'X') {
-        printf("Game Over\n");
-        printf("The winner is X\n");
-        exit(0);
-    }
-    else if (myNumbers[2] == 'X' && myNumbers[4] == 'X' && myNumbers[6] == 'X') {
-        printf("Game Over\n");
-        printf("The winner is X\n");
-        exit(0);
-    }
-    else if (myNumbers[0] == 'O' && myNumbers[1] == 'O' && myNumbers[2] == 'O') {
 
-    }
-    else if (myNumbers[3] == 'O' && myNumbers[4] == 'O' && myNumbers[5] == 'O') {
-        printf("Game Over\n");
-        printf("The winner is O\n");
-        exit(0);
-    }
-    else if (myNumbers[6] == 'O' && myNumbers[7] == 'O' && myNumbers[8] == 'O') {
-        printf("Game Over\n");
-        printf("The winner is O\n");
-        exit(0);
-    }
-    else if (myNumbers[0] == 'O' && myNumbers[3] == 'O' && myNumbers[6] == 'O') {
-        printf("Game Over\n");
-        printf("The winner is O\n");
-        exit(0);
-    }
-    else if (myNumbers[1] == 'O' && myNumbers[4] == 'O' && myNumbers[7] == 'O') {
-        printf("Game Over\n");
-        printf("The winner is O\n");
-        exit(0);
-    }
-    else if (myNumbers[2] == 'O' && myNumbers[5] == 'O' && myNumbers[8] == 'O') {
-        printf("Game Over\n");
-        printf("The winner is O\n");
-        exit(0);
-    }
-    else if (myNumbers[0] == 'O' && myNumbers[4] == 'O' && myNumbers[8] == 'O') {
-        printf("Game Over\n");
-        printf("The winner is O\n");
-        exit(0);
-    }
-    else if (myNumbers[2] == 'O' && myNumbers[4] == 'O' && myNumbers[6] == 'O') {
-        printf("Game Over\n");
-        printf("The winner is O\n");
-        exit(0);
-    }
 
 
 }
