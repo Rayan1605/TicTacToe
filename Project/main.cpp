@@ -142,16 +142,23 @@ void GetUserInput() {
     int input;
     scanf("%d", &input); //Getting the user input
 
-    if (input > 9 || input < 1) {
+    if (input > 9 || input < 1) { //Checking if the input is valid
+        // if it not valid then it will ask the user to enter a valid input
+        // and we will recall the method so he can type in a valid input
         printf("Invalid input, please try again\n");
         GetUserInput();
     }
+    //if it already taken then we can not take it again and call the same method
+    // sp he can enter a valid input
     else if (myNumbers[input - 1] == 'X' || myNumbers[input - 1] == 'O') {
         printf("Invalid input, please try again\n");
         printf("Please check the board and enter a spot that empty \n");
         GetUserInput();
     }
-    else {
+    else { //then we add it in our array and draw the board again
+        //since the array it global we can access it from any method
+        // that mean in our DrawBoard method we already have the updated array
+        //without having to send anything to the method
         myNumbers[input - 1] = 'X';
         DrawBoard();
     }
