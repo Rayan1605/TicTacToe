@@ -54,8 +54,14 @@ int main() {
 
 bool FindWinner(bool Player1,char Name[100]) { // This is the function that will check if their is a winner
     // and it will take the player1 and the name of the person
-    //The
+    //The reason I am taking the name is because I don't want c
+    //to do the same thing for the computer when it not the computer go
+    //so whoever turn it is it will check if that person move resulted in a win
+    // because if it unnecessary to check if the computer won when it not the computer turn
+
     if (Player1) {
+        //We are checking every possible way a person can win
+        //then printing it out with the Name
         if (myNumbers[0] == 'X' && myNumbers[1] == 'X' && myNumbers[2] == 'X') {
             printf("Game Over\n");
             printf("Congratulations Player “%s”, YOU ARE THE WINNER! ",Name);
