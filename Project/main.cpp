@@ -55,6 +55,14 @@ void GetUserInput() {
 
 void GetInputForComputer() {
     srand(time(NULL));
+   int ran =  (rand() % (9 - 1 + 1)) + 1;// random number between 1 and 9
+    if (myNumbers[ran - 1] == 'X' || myNumbers[ran - 1] == 'O') {
+        GetInputForComputer();
+    }
+    else {
+        myNumbers[ran - 1] = 'O';
+        DrawBoard();
+    }
 
 }
 
