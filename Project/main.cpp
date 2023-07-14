@@ -9,7 +9,7 @@ int main() {
     char FirstPerson[100];  // Assuming a maximum length of 100 characters
    char Computer[10] = "Computer";
     printf("Enter your name: ");
-   // scanf("%s", FirstPerson);
+    scanf("%s", FirstPerson);
     char FirstMarker = 'X';
     char SecondMarker = 'O';
     DrawBoard();
