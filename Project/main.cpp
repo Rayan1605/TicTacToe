@@ -165,9 +165,13 @@ void GetUserInput() {
 
 }
 
-
+//Since we have to implement a random number generator
 void GetInputForComputer() {
-    srand(time(NULL));
+    //This is what I had most trouble with , I had to look up how to
+    // use the rand() method because it was not working when I did it the orinial way
+    //After researching I found out that I had to use srand() method and
+    // also do a couple of other things like the addition then it finally worked
+    srand(time(nullptr));
    int ran =  (rand() % (9 - 1 + 1)) + 1;// random number between 1 and 9
     if (myNumbers[ran - 1] == 'X' || myNumbers[ran - 1] == 'O') {
         GetInputForComputer();
@@ -183,8 +187,8 @@ void DrawBoard() {
 //This will be called after each go
 // it will draw the board with the updated array
 //So everytime we update the array we call this method
-//and c will look in the gloval variable that already updated and draw the board
-// since we first creaated the array with everything null , it won't just leave
+//and c will look in the global variable that already updated and draw the board
+// since we first created the array with everything null , it won't just leave
 // a blank space where %c is
     printf("Welcome to Tic Tac Toe!\n");
     printf("You will be X and the computer will be O.\n");
