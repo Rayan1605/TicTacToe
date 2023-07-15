@@ -175,11 +175,11 @@ void GetInputForComputer() {
     srand(time(nullptr));
    int ran =  (rand() % (9 - 1 + 1)) + 1;// random number between 1 and 9
     if (myNumbers[ran - 1] == 'X' || myNumbers[ran - 1] == 'O') {
-        GetInputForComputer();
+        GetInputForComputer(); // if the spot is taken then we call the method again
     }
     else {
         myNumbers[ran - 1] = 'O';
-        DrawBoard();
+        DrawBoard();//if not then we will add it to the array and draw the board
     }
 
 }
