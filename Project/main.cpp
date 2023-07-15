@@ -43,7 +43,7 @@ int main() {
         }
 
 
-        if (FindWinner(player1, FirstPerson))return 0; //if their is a winner then end the game
+        if (FindWinner(player1, FirstPerson))return 0; //if there is a winner then end the game
         i++;
     }
     printf("Game Over\n");//if it goes through then print this
@@ -169,8 +169,9 @@ void GetUserInput() {
 void GetInputForComputer() {
     //This is what I had most trouble with , I had to look up how to
     // use the rand() method because it was not working when I did it the orinial way
-    //After researching I found out that I had to use srand() method and
-    // also do a couple of other things like the addition then it finally worked
+    //After researching I found out that I had to use srand() method and a couple of other
+    // things to make it work like the addition
+
     srand(time(nullptr));
    int ran =  (rand() % (9 - 1 + 1)) + 1;// random number between 1 and 9
     if (myNumbers[ran - 1] == 'X' || myNumbers[ran - 1] == 'O') {
