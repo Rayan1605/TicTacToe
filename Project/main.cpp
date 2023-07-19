@@ -8,7 +8,7 @@ void GetInputForComputer();
 
 void GetUserInput();
 
-bool FindWinner(bool Player1, char Name[20]);
+bool FindWinner(bool Player1,);
 // The reason why in each index I added a space is so when
 // someone enter a move it will replace the space with an X or O easily
 //and it won't effect the diagram because the space is the same size as the X and O
