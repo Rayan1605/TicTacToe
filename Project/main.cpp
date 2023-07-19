@@ -34,10 +34,12 @@ int main() {
     while(i < 9){ // This will loop 9 times because we have 9 boxes once it goes through all of them
         //then we can assume that it a draw
         if (player1){ // is if player1 is true then get the user input
+            printf("Player. Please enter a go");
           GetUserInput();
             player1 = false;
         }
         else{
+
             GetInputForComputer(); //and if not then it must be the computer turn
             player1 = true;
         }
