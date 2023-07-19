@@ -28,9 +28,11 @@ char myNumbers[9] = {' ',' ',' ',' ',' ',' ',' ',' ',' '}; //This is the array t
 
 
 int main() {
+    srand(time(NULL)); //This will make sure that the random number is different
     char FirstPerson[20];  // Assuming a maximum length of 100 characters
     printf("Enter your name: ");
     scanf("%s", FirstPerson);//Getting the person name
+    printf("Hello %s\n", FirstPerson);
     printf("Welcome to Tic Tac Toe!\n");
     printf("Player 1 will be X and the computer will be O.\n");
     DrawBoard(); //Calling the function to draw the board
@@ -51,8 +53,12 @@ int main() {
         else{
             printf("Computer. Please enter a go\n");
             GetInputForComputer(); //and if not then it must be the computer turn
-            if (FindWinner(player1, FirstPerson))return 0; //This will check if the player won
+            //This will check if the player won
             //if there is a winner then end the game
+            if (FindWinner(player1, FirstPerson)){
+
+                return 0;
+            }
             player1 = true; //Then set it to true because it is the player  turn
         }
         printf("\n");
@@ -78,7 +84,6 @@ bool FindWinner(bool Player1,char Name[20]) { // This is the function that will 
         //then printing it out with the Name
         if (myNumbers[0] == 'X' && myNumbers[1] == 'X' && myNumbers[2] == 'X') {
             printf("Game Over\n");
-            printf("Congratulations Player “%s”, YOU ARE THE WINNER! ",Name);
             return true;
         } else if (myNumbers[3] == 'X' && myNumbers[4] == 'X' && myNumbers[5] == 'X') {
             printf("Game Over\n");
@@ -186,7 +191,6 @@ void GetInputForComputer() {
     //After researching I found out that I had to use srand() method and a couple of other
     // things to make it work like the addition
 
-    srand(time(nullptr));
    int ran =  (rand() % (9 - 1 + 1)) + 1;// random number between 1 and 9
     if (myNumbers[ran - 1] == 'X' || myNumbers[ran - 1] == 'O') {
         GetInputForComputer(); // if the spot is taken then we call the method again
