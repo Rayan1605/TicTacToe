@@ -55,10 +55,8 @@ int main() {
             GetInputForComputer(); //and if not then it must be the computer turn
             //This will check if the player won
             //if there is a winner then end the game
-            if (FindWinner(player1, FirstPerson)){
-                printf("Congratulations Player “%s”, YOU ARE THE WINNER! ",FirstPerson);
-                return 0;
-            }
+            if (FindWinner(player1, FirstPerson))return 0;
+
             player1 = true; //Then set it to true because it is the player  turn
         }
         printf("\n");
