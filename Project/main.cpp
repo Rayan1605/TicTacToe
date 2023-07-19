@@ -7,14 +7,17 @@ void GetInputForComputer();
 void GetUserInput();
 
 bool FindWinner(bool Player1, char Name[100]);
-
-char myNumbers[9] = {}; //This is the array that will hold the position
+// The reason why in each index I added a space is so when
+// someone enter a move it will replace the space with an X or O easily
+//and it won't effect the diagram because the space is the same size as the X and O
+// so the diagram already assume that there is a space there, so it will have no effect
+char myNumbers[9] = {' ',' ',' ',' ',' ',' ',' ',' ',' '}; //This is the array that will hold the position
 // so let say someone changes the index 0  to X or O it will be stored in this array
 // and from there we know where to place it on our diagram
 
-//I made it global so I change it in any function and it will be changed in all of them
-//Make it cleaner so when I get the userinput it will automatically change the null
-// to an x and zero and I can just call the function to draw the board and it will be
+//I made it global, so I change it in any function, and it will be changed in all of them
+//Make it cleaner so when I get the user input it will automatically change the null
+// to an x and zero, and I can just call the function to draw the board, and it will be
 // updated without me having to send anything else
 
 //Also I made every index null so when I first print it , it won't have anything in it
@@ -25,7 +28,7 @@ char myNumbers[9] = {}; //This is the array that will hold the position
 int main() {
     char FirstPerson[100];  // Assuming a maximum length of 100 characters
     printf("Enter your name: ");
-    scanf("%s", FirstPerson);//Getting the person name
+    //scanf("%s", FirstPerson);//Getting the person name
     printf("Welcome to Tic Tac Toe!\n");
     printf("You will be X and the computer will be O.\n");
     DrawBoard(); //Calling the function to draw the board
@@ -195,12 +198,15 @@ void DrawBoard() {
 //and c will look in the global variable that already updated and draw the board
 // since we first created the array with everything null , it won't just leave
 // a blank space where %c is
+//This is draw in a way that it will look like a tic-tac-toe board even
+//if an area is blank and or if there is an x or o in it
 
-    printf("  %c    | %c  | %c\n ", myNumbers[0], myNumbers[1], myNumbers[2]);
-    printf(" ----|---|----\n");
-    printf("  %c    | %c  | %c\n", myNumbers[3], myNumbers[4], myNumbers[5]);
-    printf("  ----|---|----\n");
-    printf("  %c    |  %c | %c\n", myNumbers[6], myNumbers[7], myNumbers[8]);
+        printf("  %c  | %c | %c\n ", myNumbers[0], myNumbers[1], myNumbers[2]);
+        printf(" ---|---|----\n");
+        printf("  %c  | %c | %c\n", myNumbers[3], myNumbers[4], myNumbers[5]);
+        printf("  ---|---|---\n");
+        printf("  %c  | %c | %c\n", myNumbers[6], myNumbers[7], myNumbers[8]);
+
 }
 
 
