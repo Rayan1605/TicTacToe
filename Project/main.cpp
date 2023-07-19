@@ -30,7 +30,7 @@ char myNumbers[9] = {' ',' ',' ',' ',' ',' ',' ',' ',' '}; //This is the array t
 int main() {
     char FirstPerson[100];  // Assuming a maximum length of 100 characters
     printf("Enter your name: ");
-    //scanf("%s", FirstPerson);//Getting the person name
+    scanf("%s", FirstPerson);//Getting the person name
     printf("Welcome to Tic Tac Toe!\n");
     printf("You will be X and the computer will be O.\n");
     DrawBoard(); //Calling the function to draw the board
