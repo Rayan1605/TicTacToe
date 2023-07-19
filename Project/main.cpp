@@ -193,8 +193,7 @@ void DrawBoard() {
 //and c will look in the global variable that already updated and draw the board
 // since we first created the array with everything null , it won't just leave
 // a blank space where %c is
-    printf("Welcome to Tic Tac Toe!\n");
-    printf("You will be X and the computer will be O.\n");
+
     printf("  %c    | %c  | %c\n ", myNumbers[0], myNumbers[1], myNumbers[2]);
     printf(" ----|---|----\n");
     printf("  %c    | %c  | %c\n", myNumbers[3], myNumbers[4], myNumbers[5]);
