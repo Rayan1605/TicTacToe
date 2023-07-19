@@ -39,7 +39,7 @@ int main() {
             player1 = false;
         }
         else{
-
+            printf("Computer. Please enter a go");
             GetInputForComputer(); //and if not then it must be the computer turn
             player1 = true;
         }
