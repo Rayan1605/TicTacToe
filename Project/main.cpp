@@ -157,7 +157,7 @@ void GetUserInput() {
 
     if (input > 9 || input < 1) { //Checking if the input is valid
         // if it not valid then it will ask the user to enter a valid input
-        // and we will recall the method so he can type in a valid input
+        // and we will recall the method, so he can type in a valid input
         printf("Invalid input, please try again\n");
         GetUserInput();
     }
