@@ -197,13 +197,13 @@ void DrawBoard() {
 // since we first created the array with everything null , it won't just leave
 // a blank space where %c is
 
-    else{
+
         printf("  %c  | %c | %c\n ", myNumbers[0], myNumbers[1], myNumbers[2]);
         printf(" ---|---|----\n");
         printf("  %c  | %c | %c\n", myNumbers[3], myNumbers[4], myNumbers[5]);
         printf("  ---|---|---\n");
         printf("  %c  | %c | %c\n", myNumbers[6], myNumbers[7], myNumbers[8]);
-    }
+
 }
 
 
