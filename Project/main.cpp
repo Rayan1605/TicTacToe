@@ -196,13 +196,6 @@ void DrawBoard() {
 //and c will look in the global variable that already updated and draw the board
 // since we first created the array with everything null , it won't just leave
 // a blank space where %c is
-    if (!gameStart) {
-        printf("     |   | \n " );
-        printf(" ---|---|----\n");
-        printf("     |   | \n");
-        printf("  ---|---|----\n");
-        printf("     |   | \n");
-    }
 
     else{
         printf("  %c  | %c | %c\n ", myNumbers[0], myNumbers[1], myNumbers[2]);
