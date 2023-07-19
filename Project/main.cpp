@@ -32,7 +32,7 @@ int main() {
     //This will be called after each go
     int i = 0;
     bool player1 = true;//So the player will go first and when this is set to false
-    //That mean it the computer turn so we are using this to know who turn it is
+    //That mean it the computer turn, so we are using this to know who turn it is
     while(i < 9){ // This will loop 9 times because we have 9 boxes once it goes through all of them
         //then we can assume that it a draw
         if (player1){ // is if player1 is true then get the user input
