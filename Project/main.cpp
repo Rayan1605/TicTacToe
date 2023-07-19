@@ -8,7 +8,7 @@ void GetInputForComputer();
 
 void GetUserInput();
 
-bool FindWinner(bool Player1,);
+bool FindWinner(bool Player1);
 // The reason why in each index I added a space is so when
 // someone enter a move it will replace the space with an X or O easily
 //and it won't effect the diagram because the space is the same size as the X and O
@@ -91,19 +91,15 @@ bool FindWinner(bool Player1) { // This is the function that will check if their
             return true;
         } else if (myNumbers[6] == 'X' && myNumbers[7] == 'X' && myNumbers[8] == 'X') {
             printf("Game Over\n");
-
             return true;
         } else if (myNumbers[0] == 'X' && myNumbers[3] == 'X' && myNumbers[6] == 'X') {
             printf("Game Over\n");
-
             return true;
         } else if (myNumbers[1] == 'X' && myNumbers[4] == 'X' && myNumbers[7] == 'X') {
             printf("Game Over\n");
-
             return true;
         } else if (myNumbers[2] == 'X' && myNumbers[5] == 'X' && myNumbers[8] == 'X') {
             printf("Game Over\n");
-
             return true;
         } else if (myNumbers[0] == 'X' && myNumbers[4] == 'X' && myNumbers[8] == 'X') {
             printf("Game Over\n");
