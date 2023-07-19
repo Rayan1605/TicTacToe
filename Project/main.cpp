@@ -52,7 +52,7 @@ int main() {
             player1 = true;
         }
         printf("\n");
-        sleep(5); //This will make the program wait for 5 seconds
+        sleep(3); //This will make the program wait for 5 seconds
 
 
         if (FindWinner(player1, FirstPerson))return 0; //if there is a winner then end the game
