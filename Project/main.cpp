@@ -204,11 +204,13 @@ void DrawBoard() {
     printf("  %c    |  %c | %c\n", myNumbers[6], myNumbers[7], myNumbers[8]);
 
  */
-    printf("  %c  | %c | %c\n ", myNumbers[0], myNumbers[1], myNumbers[2]);
-    printf(" ---|---|----\n");
-    printf("  %c  | %c | %c\n", myNumbers[3], myNumbers[4], myNumbers[5]);
-    printf("  ---|---|---\n");
-    printf("  %c  | %c | %c\n", myNumbers[6], myNumbers[7], myNumbers[8]);
- }
+    if (gameStart) {
+        printf("  %c  | %c | %c\n ", myNumbers[0], myNumbers[1], myNumbers[2]);
+        printf(" ---|---|----\n");
+        printf("  %c  | %c | %c\n", myNumbers[3], myNumbers[4], myNumbers[5]);
+        printf("  ---|---|---\n");
+        printf("  %c  | %c | %c\n", myNumbers[6], myNumbers[7], myNumbers[8]);
+    }
+}
 
 
