@@ -54,7 +54,7 @@ int main() {
             player1 = true;
         }
         printf("\n");
-        sleep(3); //This will make the program wait for 5 seconds
+        sleep(3); //This will make the program wait for 3 seconds
 
         i++;
     }
