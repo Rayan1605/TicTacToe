@@ -198,7 +198,7 @@ void DrawBoard() {
 // a blank space where %c is
     if (!gameStart) {
         printf("     |   | \n " );
-        printf("  ---|---|---\n");
+        printf(" ---|---|----\n");
         printf("     |   | \n");
         printf("  ---|---|----\n");
         printf("     |   | \n");
