@@ -47,7 +47,7 @@ int main() {
             printf("Player. Please enter a go\n");
           GetUserInput();
             if (FindWinner(player1)){
-                printf("Congratulations Player “%s”, YOU ARE THE WINNER! ",FirstPerson);
+                printf("Congratulations Player %s, YOU ARE THE WINNER! ",FirstPerson);
                 return 0;
             } //This will check if the player won
             //if there is a winner then end the game
