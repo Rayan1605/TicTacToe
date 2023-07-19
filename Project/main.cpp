@@ -88,15 +88,14 @@ bool FindWinner(bool Player1) { // This is the function that will check if their
             return true;
         } else if (myNumbers[3] == 'X' && myNumbers[4] == 'X' && myNumbers[5] == 'X') {
             printf("Game Over\n");
-            printf("Congratulations Player “%s”, YOU ARE THE WINNER! ",Name);
             return true;
         } else if (myNumbers[6] == 'X' && myNumbers[7] == 'X' && myNumbers[8] == 'X') {
             printf("Game Over\n");
-            printf("Congratulations Player “%s”, YOU ARE THE WINNER! ",Name);
+
             return true;
         } else if (myNumbers[0] == 'X' && myNumbers[3] == 'X' && myNumbers[6] == 'X') {
             printf("Game Over\n");
-            printf("Congratulations Player “%s”, YOU ARE THE WINNER! ",Name);
+
             return true;
         } else if (myNumbers[1] == 'X' && myNumbers[4] == 'X' && myNumbers[7] == 'X') {
             printf("Game Over\n");
