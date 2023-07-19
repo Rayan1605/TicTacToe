@@ -73,7 +73,7 @@ int main() {
 
 }
 
-bool FindWinner(bool Player1,char Name[20]) { // This is the function that will check if their is a winner
+bool FindWinner(bool Player1) { // This is the function that will check if their is a winner
     // and it will take the player1 and the name of the person
     //The reason I am taking the name is that I don't want c
     //to do the same thing for the computer when it not the computer go
