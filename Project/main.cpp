@@ -11,7 +11,7 @@ void GetUserInput();
 bool FindWinner(bool Player1);
 // The reason why in each index I added a space is so when
 // someone enter a move it will replace the space with an X or O easily
-//and it won't effect the diagram because the space is the same size as the X and O
+//and it won't affect the diagram because the space is the same size as the X and O
 // so the diagram already assume that there is a space there, so it will have no effect
 char myNumbers[9] = {' ',' ',' ',' ',' ',' ',' ',' ',' '}; //This is the array that will hold the position
 // so let say someone changes the index 0  to X or O it will be stored in this array
@@ -113,39 +113,39 @@ bool FindWinner(bool Player1) { // This is the function that will check if their
         //so we are doing the same
         if (myNumbers[0] == 'O' && myNumbers[1] == 'O' && myNumbers[2] == 'O') {
             printf("Game Over\n");
-            printf("Congratulations Player “COMPUTER”, YOU ARE THE WINNER! ");
+            printf("Congratulations COMPUTER, YOU ARE THE WINNER! ");
             return true;
         } else if (myNumbers[3] == 'O' && myNumbers[4] == 'O' && myNumbers[5] == 'O') {
             printf("Game Over\n");
-            printf("Congratulations Player “COMPUTER”, YOU ARE THE WINNER! ");
+            printf("Congratulations  COMPUTER, YOU ARE THE WINNER! ");
             return true;
         } else if (myNumbers[6] == 'O' && myNumbers[7] == 'O' && myNumbers[8] == 'O') {
             printf("Game Over\n");
-            printf("Congratulations Player “COMPUTER”, YOU ARE THE WINNER! ");
+            printf("Congratulations  COMPUTER, YOU ARE THE WINNER! ");
           return true;
         } else if (myNumbers[0] == 'O' && myNumbers[3] == 'O' && myNumbers[6] == 'O') {
             printf("Game Over\n");
-            printf("Congratulations Player “COMPUTER”, YOU ARE THE WINNER! ");
+            printf("Congratulations  COMPUTER, YOU ARE THE WINNER! ");
             return true;
         } else if (myNumbers[1] == 'O' && myNumbers[4] == 'O' && myNumbers[7] == 'O') {
             printf("Game Over\n");
-            printf("Congratulations Player “COMPUTER”, YOU ARE THE WINNER! ");
+            printf("Congratulations  COMPUTER, YOU ARE THE WINNER! ");
             return true;
         } else if (myNumbers[2] == 'O' && myNumbers[5] == 'O' && myNumbers[8] == 'O') {
             printf("Game Over\n");
-            printf("Congratulations Player “COMPUTER”, YOU ARE THE WINNER! ");
+            printf("Congratulations  COMPUTER, YOU ARE THE WINNER! ");
             return true;
         } else if (myNumbers[0] == 'O' && myNumbers[4] == 'O' && myNumbers[8] == 'O') {
             printf("Game Over\n");
-            printf("Congratulations Player “COMPUTER”, YOU ARE THE WINNER! ");
+            printf("Congratulations  COMPUTER, YOU ARE THE WINNER! ");
             return true;
         } else if (myNumbers[2] == 'O' && myNumbers[4] == 'O' && myNumbers[6] == 'O') {
             printf("Game Over\n");
-            printf("Congratulations Player “COMPUTER”, YOU ARE THE WINNER! ");
+            printf("Congratulations  COMPUTER, YOU ARE THE WINNER! ");
             return true;
         }
     }
-    return false; //if the check failed to find any winner then it return false
+    return false; //if the check failed to find any winner then it returns false
 
 
 }
