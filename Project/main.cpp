@@ -9,7 +9,7 @@ bool gameStart = true;
 
 bool FindWinner(bool Player1, char Name[100]);
 
-char myNumbers[9] = {'x',' ',' ',' ',' ',' ',' ',' ',' '}; //This is the array that will hold the position
+char myNumbers[9] = {' ',' ',' ',' ',' ',' ',' ',' ',' '}; //This is the array that will hold the position
 // so let say someone changes the index 0  to X or O it will be stored in this array
 // and from there we know where to place it on our diagram
 
