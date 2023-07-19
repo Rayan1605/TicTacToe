@@ -9,7 +9,8 @@ void GetUserInput();
 bool FindWinner(bool Player1, char Name[100]);
 // The reason why in each index I added a space is so when
 // someone enter a move it will replace the space with an X or O easily
-//and it won't effect
+//and it won't effect the diagram because the space is the same size as the X and O
+// so the diagram already assume that there is a space there so it will have no effect
 char myNumbers[9] = {' ',' ',' ',' ',' ',' ',' ',' ',' '}; //This is the array that will hold the position
 // so let say someone changes the index 0  to X or O it will be stored in this array
 // and from there we know where to place it on our diagram
