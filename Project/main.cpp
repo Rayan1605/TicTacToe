@@ -8,7 +8,7 @@ void GetInputForComputer();
 
 void GetUserInput();
 
-bool FindWinner(bool Player1, char Name[100]);
+bool FindWinner(bool Player1, char Name[20]);
 // The reason why in each index I added a space is so when
 // someone enter a move it will replace the space with an X or O easily
 //and it won't effect the diagram because the space is the same size as the X and O
@@ -28,7 +28,7 @@ char myNumbers[9] = {' ',' ',' ',' ',' ',' ',' ',' ',' '}; //This is the array t
 
 
 int main() {
-    char FirstPerson[100];  // Assuming a maximum length of 100 characters
+    char FirstPerson[20];  // Assuming a maximum length of 100 characters
     printf("Enter your name: ");
     scanf("%s", FirstPerson);//Getting the person name
     printf("Welcome to Tic Tac Toe!\n");
@@ -46,7 +46,7 @@ int main() {
           GetUserInput();
             if (FindWinner(player1, FirstPerson))return 0; //This will check if the player won
             //if there is a winner then end the game
-            player1 = false; //Then set it to false because it the computer turn
+            player1 = false; //Then set it to false because it is the computer turn
         }
         else{
             printf("Computer. Please enter a go\n");
@@ -66,7 +66,7 @@ int main() {
 
 }
 
-bool FindWinner(bool Player1,char Name[100]) { // This is the function that will check if their is a winner
+bool FindWinner(bool Player1,char Name[20]) { // This is the function that will check if their is a winner
     // and it will take the player1 and the name of the person
     //The reason I am taking the name is because I don't want c
     //to do the same thing for the computer when it not the computer go
