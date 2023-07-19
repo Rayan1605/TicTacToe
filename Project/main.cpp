@@ -7,14 +7,16 @@ void GetInputForComputer();
 void GetUserInput();
 
 bool FindWinner(bool Player1, char Name[100]);
-
+// The reason why in each index I added a space is so when
+// someone enter a move it will replace the space with an X or O easily
+//and it won't effect
 char myNumbers[9] = {' ',' ',' ',' ',' ',' ',' ',' ',' '}; //This is the array that will hold the position
 // so let say someone changes the index 0  to X or O it will be stored in this array
 // and from there we know where to place it on our diagram
 
-//I made it global so I change it in any function and it will be changed in all of them
-//Make it cleaner so when I get the userinput it will automatically change the null
-// to an x and zero and I can just call the function to draw the board and it will be
+//I made it global, so I change it in any function and it will be changed in all of them
+//Make it cleaner so when I get the user input it will automatically change the null
+// to an x and zero, and I can just call the function to draw the board and it will be
 // updated without me having to send anything else
 
 //Also I made every index null so when I first print it , it won't have anything in it
