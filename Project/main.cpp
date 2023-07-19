@@ -5,7 +5,6 @@ void DrawBoard();
 void GetInputForComputer();
 
 void GetUserInput();
-bool gameStart = true;
 
 bool FindWinner(bool Player1, char Name[100]);
 
