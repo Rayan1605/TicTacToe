@@ -46,6 +46,7 @@ int main() {
           GetUserInput();
             player1 = false;
             if (FindWinner(player1, FirstPerson))return 0; //This will check if the player won
+            //if there is a winner then end the game
         }
         else{
             printf("Computer. Please enter a go\n");
