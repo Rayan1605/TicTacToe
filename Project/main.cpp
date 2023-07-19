@@ -45,6 +45,7 @@ int main() {
             printf("Player. Please enter a go\n");
           GetUserInput();
             player1 = false;
+            if (FindWinner(player1, FirstPerson))return 0; //This will check if the player won
         }
         else{
             printf("Computer. Please enter a go\n");
@@ -55,7 +56,7 @@ int main() {
         sleep(3); //This will make the program wait for 5 seconds
 
 
-        if (FindWinner(player1, FirstPerson))return 0; //if there is a winner then end the game
+        //if there is a winner then end the game
         i++;
     }
     printf("Game Over\n");//if it goes through then print this
