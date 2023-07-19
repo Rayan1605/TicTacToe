@@ -51,7 +51,9 @@ int main() {
         else{
             printf("Computer. Please enter a go\n");
             GetInputForComputer(); //and if not then it must be the computer turn
-            player1 = true;
+            if (FindWinner(player1, FirstPerson))return 0; //This will check if the player won
+            //if there is a winner then end the game
+            player1 = false; //Then set it to false because it the computer turn
         }
         printf("\n");
         sleep(3); //This will make the program wait for 3 seconds
