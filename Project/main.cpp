@@ -1,4 +1,6 @@
 #include <iostream>
+#include <unistd.h>
+
 //Name of our class that we made to help us with the game
 void DrawBoard();
 
@@ -48,6 +50,8 @@ int main() {
             GetInputForComputer(); //and if not then it must be the computer turn
             player1 = true;
         }
+        printf("\n");
+        sleep(20); //This will make the program wait for 20 seconds
 
 
         if (FindWinner(player1, FirstPerson))return 0; //if there is a winner then end the game
