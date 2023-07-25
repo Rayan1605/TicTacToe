@@ -165,6 +165,7 @@ void GetUserInput() {
     //if it already taken then we can not take it again and call the same method
     // sp he can enter a valid input
     else if (myNumbers[input - 1] == 'X' || myNumbers[input - 1] == 'O') {
+        printf("\n");
         printf("Invalid input, please try again\n");
         printf("Please check the board and enter a spot that empty \n");
         GetUserInput();
