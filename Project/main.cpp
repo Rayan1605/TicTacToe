@@ -160,13 +160,14 @@ void GetUserInput() {
     printf("\n");
 
     if (input > 9 || input < 1) { //Checking if the input is valid
-        // if it not valid then it will ask the user to enter a valid input
-        // and we will recall the method, so he can type in a valid input
+        // if it not valid then it will ask the user to enter a valid input,
+        // and we will recall the method, so he can have another change to
+        // type in a valid input
         printf("Invalid input, please try again\n");
         GetUserInput();
     }
-    //if it already taken then we can not take it again and call the same method
-    // sp he can enter a valid input
+    //if it has already taken then we can not take it again and call the same method
+    // sp he can enter a valid input, however we will let him know that the spot is taken
     else if (myNumbers[input - 1] == 'X' || myNumbers[input - 1] == 'O') {
         printf("\n");
         printf("Invalid input, please try again\n");
