@@ -44,7 +44,7 @@ int main() {
     while(i < 9){ // This will loop 9 times because we have 9 boxes once it goes through all of them
         //then we can assume that it a draw
         if (player1){ // is if player1 is true then get the user input
-            printf("Player 1 : Please enter a go\n");
+            printf("Player 1: Please enter a go\n");
           GetUserInput();
             if (FindWinner(player1)){
                 printf("Congratulations Player %s, YOU ARE THE WINNER! ",FirstPerson);
