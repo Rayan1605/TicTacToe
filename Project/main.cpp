@@ -187,9 +187,12 @@ void GetUserInput() {
 //Since we have to implement a random number generator
 void GetInputForComputer() {
     //This is what I had most trouble with , I had to look up how to
-    // use the rand() method because it was not working when I did it the orinial way
+    // use the rand() method because it was not working when I did it the original way
     //After researching I found out that I had to use srand() method and a couple of other
-    // things to make it work like the addition
+    // things to make it work
+    //However when I tried to use srand() method it was not working when I was putting
+    //in the GetInputForComputer() method,  so I had to put it in the main method
+    // then it worked fine
 
    int ran =  (rand() % (9 - 1 + 1)) + 1;// random number between 1 and 9
     if (myNumbers[ran - 1] == 'X' || myNumbers[ran - 1] == 'O') {
