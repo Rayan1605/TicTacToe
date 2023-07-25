@@ -37,7 +37,7 @@ int main() {
     printf("Player 1 will be X and the computer will be O.\n");
     DrawBoard(); //Calling the function to draw the board
     //This will be called after each go
-    sleep(3); //This will make the program wait for 5 seconds
+    sleep(3); //This will make the program wait for 3 seconds
     int i = 0;
     bool player1 = true;//So the player will go first and when this is set to false
     //That mean it the computer turn, so we are using this to know who turn it is
