@@ -25,7 +25,7 @@ char myNumbers[9] = {' ',' ',' ',' ',' ',' ',' ',' ',' '}; //This is the array t
 
 
 int main() {
-    srand(time(NULL)); //This will make sure that the random number is different
+    srand(time(NULL)); //This will make sure that the random number is  different
     char FirstPerson[20];  // Assuming a maximum length of 100 characters
     printf("Enter your name: ");
     scanf("%s", FirstPerson);//Getting the person name
@@ -33,17 +33,20 @@ int main() {
     printf("Welcome to Tic Tac Toe!\n");
     printf("Player 1 will be X and the computer will be O.\n");
     DrawBoard(); //Calling the function to draw the board
-    //This will be called after each go
+    //This will be called after each go but since no one has gone, yet it will be empty
     sleep(3); //This will make the program wait for 3 seconds
     int i = 0;
-    bool player1 = true;//So the player will go first and when this is set to false
+    bool player1 = true;//So the player will go first and when it is the computer turn
+    // this will be set to false
     //That mean it the computer turn, so we are using this to know who turn it is
-    while(i < 9){ // This will loop 9 times because we have 9 boxes once it goes through all of them
+    while(i < 9){ // This will loop 9 times because we have 9 boxes
+        // once it goes through all of them
         //then we can assume that it a draw
         if (player1){ // is if player1 is true then get the user input
             printf("Player 1: Please enter a go\n");
           GetUserInput();
             if (FindWinner(player1)){
+                //if this return true then it means that the player won
                 printf("Congratulations Player %s, YOU ARE THE WINNER! ",FirstPerson);
                 return 0;
             } //This will check if the player won
@@ -64,16 +67,19 @@ int main() {
 
         i++;
     }
-    printf("Game Over\n");//if it goes through then print this
+    printf("Game Over\n");//If the while loop end then it must be a draw
     printf("The result was a draw\n");
     printf("Thanks for playing %s\n", FirstPerson);
 
 }
 
-bool FindWinner(bool Player1) { // This is the function that will check if their is a winner
+bool FindWinner(bool Player1) { // This is the function that will check if
+    // there is a winner,
     // and it will take the player1 and the name of the person
     //The reason I am taking the name is that I don't want c
-    //to do the same thing for the computer when it not the computer go
+    //to do the same thing for the computer when it not the computer turn
+    //Because it will just be a waste of time since it impossible for the
+    // computer to win if it is the player turn
     //so whoever turn it is it will check if that person move resulted in a win
     // because if it unnecessary to check if the computer won when it not the computer turn
 
