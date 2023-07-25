@@ -175,7 +175,7 @@ void GetUserInput() {
         GetUserInput();
     }
     else { //then we add it in our array and draw the board again
-        //since the array it global we can access it from any method
+        //since the array is global, we can access it from any method
         // that mean in our DrawBoard method we already have the updated array
         //without having to send anything to the method
         myNumbers[input - 1] = 'X';
