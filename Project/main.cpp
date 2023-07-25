@@ -154,6 +154,7 @@ void GetUserInput() {
     printf("Enter a number between 1 and 9: \n");
     int input;
     scanf("%d", &input); //Getting the user input
+    printf("\n");
 
     if (input > 9 || input < 1) { //Checking if the input is valid
         // if it not valid then it will ask the user to enter a valid input
