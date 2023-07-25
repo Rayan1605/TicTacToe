@@ -189,7 +189,7 @@ void GetInputForComputer() {
     //This is what I had most trouble with , I had to look up how to
     // use the rand() method because it was not working when I did it the original way
     //After researching I found out that I had to use srand() method and a couple of other
-    // things to make it work
+    // things to make it work like the addition
     //However when I tried to use srand() method it was not working when I was putting
     //in the GetInputForComputer() method,  so I had to put it in the main method
     // then it worked fine
@@ -199,7 +199,9 @@ void GetInputForComputer() {
         GetInputForComputer(); // if the spot is taken then we call the method again
     }
     else {
-        myNumbers[ran - 1] = 'O';
+        myNumbers[ran - 1] = 'O';//The reason we are subtracting 1 is
+        // that the array start at 0
+        //like the index start zero and we did the same with the user input
         DrawBoard();//if not then we will add it to the array and draw the board
     }
 
@@ -210,11 +212,13 @@ void DrawBoard() {
 // it will draw the board with the updated array
 //So everytime we update the array we call this method
 //and c will look in the global variable that already updated and draw the board
-// since we first created the array with everything null , it won't just leave
-// a blank space where %c is
+// since we first created the array with a space, it won't just change the
+// drawing of the board
 //This is draw in a way that it will look like a tic-tac-toe board even
 //if an area is blank and or if there is an x or o in it
 
+
+//This is what I found out to be the best way to draw the board
         printf("  %c  | %c | %c\n ", myNumbers[0], myNumbers[1], myNumbers[2]);
         printf(" ---|---|----\n");
         printf("  %c  | %c | %c\n", myNumbers[3], myNumbers[4], myNumbers[5]);
